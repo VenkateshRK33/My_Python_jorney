@@ -12,3 +12,16 @@ def tic_tac_toe_game(board):
     
     if board[0][2] == board[1][1] == board[2][0] and board [0][2] in ("X","O"):
         return board[0][2]
+    
+    return None
+
+board = [["X","O","X"],
+         ["X","X","O"],
+         ["O","O","X"]]
+
+w = tic_tac_toe_game(board)
+
+if w:
+    print(f"winner:{w}")
+else:
+    print("no winner")
